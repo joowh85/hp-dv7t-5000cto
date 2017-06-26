@@ -63,8 +63,6 @@
 	</array>
 	<key>GUI</key>
 	<dict>
-		<key>ScreenResolution</key>
-		<string>1920x1080</string>
 		<key>Custom</key>
 		<dict>
 			<key>Entries</key>
@@ -101,6 +99,8 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
+		<key>ScreenResolution</key>
+		<string>1920x1080</string>
 		<key>Theme</key>
 		<string>BGM</string>
 	</dict>
@@ -140,6 +140,10 @@
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
 		</array>
+		<key>KernelLapic</key>
+		<true/>
+		<key>KernelPm</key>
+		<true/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -147,18 +151,20 @@
 				<string>HDMI-audio/VGA(0602) HD3000, 0x00010000, port 0406</string>
 				<key>Disabled</key>
 				<true/>
+				<key>Find</key>
+				<data>
+				AQIEABAHAAAQBwAABQMAAAIAAAAwAAAAAgUAAAAEAAAH
+				AAAAAwQAAAAEAAAJAAAABAYAAAAEAAAJAAAA
+				</data>
 				<key>Name</key>
 				<string>com.apple.driver.AppleIntelSNBGraphicsFB</string>
-				<key>Find</key>
-				<data>AQIEABAHAAAQBwAABQMAAAIAAAAwAAAAAgUAAAAEAAAHAAAAAwQAAAAEAAAJAAAABAYAAAAEAAAJAAAA</data>
 				<key>Replace</key>
-				<data>AQIDABAHAAAQBwAABgIAAAABAAAJAAAABQMAAAIAAAAwAAAABAYAAAAIAAAJAAAAAAAAAAAAAAAAAAAA</data>
+				<data>
+				AQIDABAHAAAQBwAABgIAAAABAAAJAAAABQMAAAIAAAAw
+				AAAABAYAAAAIAAAJAAAAAAAAAAAAAAAAAAAA
+				</data>
 			</dict>
 		</array>
-		<key>KernelLapic</key>
-		<true/>
-		<key>KernelPm</key>
-		<true/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
